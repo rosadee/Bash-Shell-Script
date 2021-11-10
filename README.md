@@ -1,2 +1,8 @@
-# Bash-Shell-Script
-Script to delete log file every 2 weeks/14 days
+#!/bin/bash
+
+#Description: delete logs 14 days old from var/log
+#Author: Rosa
+#Date: November, 2021
+
+find /var/log -mtime +14 -type f -delete 
+exit 0
